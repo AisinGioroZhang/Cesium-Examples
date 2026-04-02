@@ -1,0 +1,33 @@
+# 城市范围（以北京五环为例，可替换）
+bbox:
+  min_lon: 116.0
+  min_lat: 39.7
+  max_lon: 116.7
+  max_lat: 40.1
+
+# 北斗网格层级配置
+# 推荐：L5(~123m)到L7(~7.7m)
+tile_levels: [4, 5, 6, 7]  # tileset 层级（北斗层级编号）
+analysis_level: 7            # 遮蔽分析使用的层级
+
+# 垂直分层
+vertical:
+  min_alt: 0       # 最低高度（m，相对地面）
+  max_alt: 500     # 最高高度（m，相对地面）
+  step: 10         # 垂直步长（m）
+
+# 数据源
+data_sources:
+  terrain_tif: ""         # GeoTIFF DEM 路径（可为空）
+  building_vector: ""     # shp/geojson 路径（可为空）
+  building_height_attr: "height"  # 建筑高度属性字段名
+
+# 输出
+output:
+  dir: "./output/tiles"
+  format: "glb"           # glb 或 gltf
+
+# 性能
+performance:
+  tile_batch_size: 100    # 每批处理的 tile 数量
+  workers: 4              # 并行进程数
