@@ -2,7 +2,7 @@
 
 ## 项目简介
 
-**urban-grid-tiles** 是一个 Python 工具链，用于将多源城市数据（地形 GeoTIFF、建筑 shp/geojson、白膜 3D Tiles、倾斜摄影 osgb）统一处理，生成基于**北斗网格编码（GB/T 40087）**的多层级三维体素 3D Tiles 数据底座，用于**城市近地空间反无人机遮蔽分析与可视化**。
+**urban-grid-tiles** 是一个 Python 工具链，用于将多源城市数据（地形 GeoTIFF、建筑 shp/geojson、白膜 3D Tiles、倾斜摄影 osgb）统一处理，生成基于**北斗网格编码（GB/T 40087）**的多层级三维体素 3D Tiles 数据底座，用于**城市近地空间可视化**。
 
 核心思路：
 - **离线生成全量网格 3D Tiles**（instancing，规则正方体体素）
