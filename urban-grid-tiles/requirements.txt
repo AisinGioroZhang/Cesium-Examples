@@ -1,0 +1,17 @@
+numpy
+scipy
+rasterio
+GDAL
+geopandas
+fiona
+shapely
+pyproj
+pygltflib
+DracoPy
+FastAPI
+uvicorn
+pydantic
+PyYAML
+click
+tqdm
+pytest
